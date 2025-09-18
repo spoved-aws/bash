@@ -38,9 +38,7 @@
 
   
 
-### **find**
-
-### **& File Handling**
+### **find & File Handling**
 
 13.  Write a script to find all .log files modified in the last 24 hours.
     
