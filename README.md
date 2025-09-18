@@ -25,11 +25,7 @@
 
   
 
-### **awk**
-
-### **&**
-
-### **grep**
+### **awk & grep**
 
 9.  Use awk to print the 1st and 7th fields of web.log (IP and status code).
     
