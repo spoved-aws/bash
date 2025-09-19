@@ -1,0 +1,50 @@
+
+tar -xzvf archive.tar -C /path/to/extract/to  
+tar -czvf archive.tar.gz /path/to/directory  
+  
+• -c or --create: Create a new archive.  
+• -f or --file: Specify the name of the archive file.  
+• -v or --verbose: Display detailed information while creating the archive.  
+• -z or --gzip: Compress the archive using gzip.  
+• -j or --bzip2: Compress the archive using bzip2.  
+• -J or --xz: Compress the archive using xz.  
+  
+***********AWK*******************
+# Basic syntax
+awk 'condition {action}' file
+
+# -F - separator for the data
+
+# Count occurrence 
+awk '$1=="apple" {count++} END {print count}' data.txt
+
+# Conditional 'if'
+awk -F',' '$3 >= 10 && $3 <= 50 { print $0 }' products.csv | tr -d ' '  
+  
+**********************************  
+  
+grep -rl "$SEARCH_STRING" "$SEARCH_DIR" //return filename and files with search string  
+  
+  
+  
+CPU usage  
+top -bn1  
+current_usage=$(echo "100-$idle_usage" | bc )  
+  
+***********FIND*******************  
+  
+find "$DIRECTORY" -type f -mtime +"$DAYS" -delete  
+  
+  
+//find all files with “temp” in their names and then search for the pattern “error” within those files.  
+find <dir> -type f -iname "*temp*" -exec grep -i "error" {} +  
+  
+find "$DIR" -type d -empty -print -delete  
+  
+find "$DIR" -type f -name "*$string*" -printf "%P\n" // only files  
+  
+13. find & deletes temporary files older than a specified number of days.  
+find "$dir" -type f -iname "*temp*" -mtime +"$DAYS" -delete  
+  
+**********************************  
+new_name="${file%.*}_$current_date.${file##*.}"

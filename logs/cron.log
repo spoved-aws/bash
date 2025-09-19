@@ -1,0 +1,7 @@
+Sep 16 12:15:01 server1 CRON[3000]: (root) CMD (/usr/bin/backup.sh)
+Sep 16 12:20:01 server1 CRON[3001]: (alice) CMD (/usr/bin/python3 /home/alice/script.py)
+Sep 16 12:25:01 server1 CRON[3002]: (bob) CMD (/usr/bin/find /tmp -type f -name '*.tmp' -delete)
+Sep 16 12:30:01 server1 CRON[3003]: (charlie) CMD (/usr/bin/echo "Hello World")
+Sep 16 12:35:01 server1 CRON[3004]: (root) CMD (/usr/bin/systemctl restart apache2)
+Sep 16 12:40:01 server1 CRON[3005]: (eve) CMD (/usr/bin/tar -czf /backup/home_eve.tar.gz /home/eve)
+Sep 16 12:45:01 server1 CRON[3006]: (dave) CMD (/usr/bin/date >> /tmp/cron_test.log)

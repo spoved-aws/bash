@@ -1,0 +1,8 @@
+Sep 16 12:01:01 server1 sudo: alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/bin/apt update
+Sep 16 12:02:02 server1 sudo: bob : TTY=pts/1 ; PWD=/home/bob ; USER=root ; COMMAND=/bin/systemctl restart apache2
+Sep 16 12:03:03 server1 sudo: charlie : TTY=pts/2 ; PWD=/home/charlie ; USER=root ; COMMAND=/bin/rm -rf /tmp/*
+Sep 16 12:04:04 server1 sshd[2345]: Failed password for invalid user test from 203.0.113.10 port 55555 ssh2
+Sep 16 12:05:05 server1 sshd[2346]: Failed password for root from 203.0.113.11 port 55556 ssh2
+Sep 16 12:06:06 server1 sshd[2347]: Failed password for admin from 203.0.113.12 port 55557 ssh2
+Sep 16 12:07:07 server1 sshd[2348]: Accepted password for alice from 192.168.1.20 port 55558 ssh2
+Sep 16 12:08:08 server1 sshd[2349]: Accepted password for bob from 192.168.1.21 port 55559 ssh2

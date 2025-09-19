@@ -1,0 +1,8 @@
+Sep 16 12:10:01 mail postfix/smtpd[2000]: connect from mail.example.com[192.168.1.100]
+Sep 16 12:10:02 mail postfix/smtpd[2000]: E3D9012345: client=mail.example.com[192.168.1.100]
+Sep 16 12:10:03 mail postfix/cleanup[2001]: E3D9012345: message-id=<test@mail.example.com>
+Sep 16 12:10:04 mail postfix/qmgr[2002]: E3D9012345: from=<alice@example.com>, size=1234, nrcpt=1 (queue active)
+Sep 16 12:10:05 mail postfix/smtp[2003]: E3D9012345: to=<bob@example.com>, relay=mx.example.net[203.0.113.200]:25, delay=0.5, dsn=2.0.0, status=sent (250 OK)
+Sep 16 12:10:06 mail postfix/qmgr[2002]: E3D9012345: removed
+Sep 16 12:10:10 mail postfix/smtpd[2004]: connect from mail.example.net[192.168.1.101]
+Sep 16 12:10:11 mail postfix/smtpd[2004]: NOQUEUE: reject: RCPT from mail.example.net[192.168.1.101]: 550 5.1.1 <unknown@example.com> User unknown
